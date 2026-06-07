@@ -90,13 +90,18 @@ h1, h2, h3, h4 {
 @media (max-width: 768px) {
   .timeline-4col {
     grid-template-columns: 1fr 1fr;
+    padding: 0 16px !important;
   }
   .two-col-grid {
     grid-template-columns: 1fr !important;
-    gap: 30px !important;
+    gap: 24px !important;
   }
   .airports-3col {
     grid-template-columns: 1fr !important;
+  }
+  /* Reduce card inner padding on mobile */
+  .desktop-nav-links {
+    display: none !important;
   }
 }
 

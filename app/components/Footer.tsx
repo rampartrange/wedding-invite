@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer style={{ background: '#b8505f', color: 'rgba(255,255,255,0.7)', textAlign: 'center', padding: '60px 40px', borderTop: '5px solid #e8b860' }}>
+    <footer style={{ background: '#b8505f', color: 'rgba(255,255,255,0.7)', textAlign: 'center', padding: 'clamp(40px,8vw,60px) clamp(20px,6vw,40px)', borderTop: '5px solid #e8b860' }}>
       <h2 style={{ fontFamily: "'Comfortaa', cursive", fontSize: 'clamp(2rem,6vw,3.5rem)', color: '#e8b860', marginBottom: '18px', fontWeight: 400 }}>
         Артём &amp; Вита
       </h2>

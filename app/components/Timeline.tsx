@@ -9,7 +9,7 @@ const items = [
 
 export default function Timeline() {
   return (
-    <section id="timeline" style={{ background: 'rgba(255,255,255,0.8)', padding: 'clamp(60px,8vw,100px) 0', overflow: 'hidden' }}>
+    <section id="timeline" style={{ background: 'rgba(255,255,255,0.8)', padding: 'clamp(60px,8vw,100px) 0 clamp(60px,8vw,100px)', overflow: 'hidden' }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 clamp(20px,5vw,60px)' }}>
         <h2 style={{ fontSize: 'clamp(2.2rem,6vw,3.5rem)', color: '#9ea84b', marginBottom: '15px', fontFamily: "'Comfortaa', cursive", fontWeight: 400, textAlign: 'center', animation: 'fadeInUp 0.8s ease-out forwards' }}>
           Программа дня
@@ -18,7 +18,7 @@ export default function Timeline() {
       </div>
 
       {/* 4-column horizontal grid */}
-      <div className="timeline-4col">
+      <div className="timeline-4col" style={{ padding: '0 clamp(16px,4vw,40px)' }}>
         {items.map((item, i) => (
           <div
             key={i}

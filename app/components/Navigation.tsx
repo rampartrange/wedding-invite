@@ -36,7 +36,7 @@ export default function Navigation() {
   return (
     <nav style={{
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1000,
-      padding: '14px 40px', display: 'flex', alignItems: 'center',
+      padding: '14px clamp(16px, 4vw, 40px)', display: 'flex', alignItems: 'center',
       justifyContent: 'space-between',
       background: 'rgba(245, 240, 232, 0.97)',
       backdropFilter: 'blur(8px)',

@@ -43,7 +43,7 @@ export default function Hero() {
 
         <h1 style={{
           fontFamily: "'Comfortaa', cursive",
-          fontSize: 'clamp(3.5rem,11vw,8rem)',
+          fontSize: 'clamp(2.4rem,11vw,8rem)',
           color: '#2b52a3', lineHeight: 0.95,
           fontWeight: 400, letterSpacing: '-0.01em',
         }}>
