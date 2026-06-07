@@ -9,7 +9,7 @@ export default function Location() {
             fontSize: 'clamp(2.2rem, 6vw, 3.5rem)',
             color: '#ffffff',
             marginBottom: '15px',
-            fontFamily: "'Loli Candy', cursive",
+            fontFamily: "'Comfortaa', cursive",
             fontWeight: 400,
             animation: 'fadeInUp 0.8s ease-out forwards',
             textAlign: 'center',
@@ -49,7 +49,7 @@ export default function Location() {
                 fontSize: '1.4rem',
                 color: '#b8505f',
                 marginBottom: '20px',
-                fontFamily: "'Loli Candy', cursive",
+                fontFamily: "'Comfortaa', cursive",
                 fontWeight: 400,
               }}>
                 ✈️ Аэропорты поблизости
@@ -98,7 +98,7 @@ export default function Location() {
                     <div style={{
                       fontSize: '1.15rem',
                       color: airport.accent,
-                      fontFamily: "'Loli Candy', cursive",
+                      fontFamily: "'Comfortaa', cursive",
                       fontWeight: 400,
                       textAlign: 'center',
                     }}>
@@ -136,7 +136,7 @@ export default function Location() {
                 fontSize: '1.3rem',
                 color: '#2c2c2c',
                 marginBottom: '10px',
-                fontFamily: "'Loli Candy', cursive",
+                fontFamily: "'Comfortaa', cursive",
                 fontWeight: 400,
               }}>
                 Важные рекомендации
@@ -170,7 +170,7 @@ export default function Location() {
                 fontWeight: 400,
               }}>
                 <strong>Адрес:</strong>{' '}
-                <a href="https://yandex.ru/maps/-/CPdGR49Y" target="_blank" rel="noopener noreferrer" style={{ color: '#2c2c2c', textDecoration: 'none', borderBottom: '1px dashed #9ea84b', cursor: 'pointer' }}>
+                <a href="https://yandex.ru/maps/org/gelendzhik_golf_rezort/112258572117?si=vzup2y74ufbvhdnhkc4343715m" target="_blank" rel="noopener noreferrer" style={{ color: '#2c2c2c', textDecoration: 'none', borderBottom: '1px dashed #9ea84b', cursor: 'pointer' }}>
                   Краснодарский край, г. Геленджик, ул. Стартовая, д. 1, корп. 2
                 </a>
               </p>

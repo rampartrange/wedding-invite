@@ -62,7 +62,7 @@ export default function Survey() {
               fontSize: 'clamp(2rem, 6vw, 3rem)',
               color: '#ffffff',
               marginBottom: '15px',
-              fontFamily: "'Loli Candy', cursive",
+              fontFamily: "'Comfortaa', cursive",
               fontWeight: 400,
             }}>
               Спасибо за ответ!
@@ -90,7 +90,7 @@ export default function Survey() {
             fontSize: 'clamp(2.2rem, 6vw, 3.5rem)',
             color: '#ffffff',
             marginBottom: '15px',
-            fontFamily: "'Loli Candy', cursive",
+            fontFamily: "'Comfortaa', cursive",
             fontWeight: 400,
             animation: 'fadeInUp 0.8s ease-out forwards',
             textAlign: 'center',

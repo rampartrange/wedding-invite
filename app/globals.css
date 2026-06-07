@@ -19,7 +19,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Loli Candy', cursive;
+  font-family: 'Comfortaa', cursive;
   font-weight: 400;
 }
 
@@ -187,7 +187,7 @@ h1, h2, h3, h4 {
   border: none;
   border-radius: 50px;
   color: #2c2c2c;
-  font-family: 'Loli Candy', cursive;
+  font-family: 'Comfortaa', cursive;
   font-size: 1.2rem;
   font-weight: 400;
   cursor: pointer;
@@ -207,7 +207,7 @@ h1, h2, h3, h4 {
   border: none;
   border-radius: 50px;
   color: #ffffff;
-  font-family: 'Loli Candy', cursive;
+  font-family: 'Comfortaa', cursive;
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -246,7 +246,7 @@ h1, h2, h3, h4 {
   background: #e8b860;
   color: #2c2c2c;
   border-radius: 30px;
-  font-family: 'Loli Candy', cursive;
+  font-family: 'Comfortaa', cursive;
   font-size: 1rem;
 }
 
@@ -256,7 +256,7 @@ h1, h2, h3, h4 {
   background: #b8505f;
   color: #ffffff;
   border-radius: 30px;
-  font-family: 'Loli Candy', cursive;
+  font-family: 'Comfortaa', cursive;
   font-size: 1rem;
 }
 

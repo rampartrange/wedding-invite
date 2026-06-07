@@ -306,7 +306,7 @@ export default function GolfGame({ onComplete }: GolfGameProps) {
             </span>
             
             <h1 style={{
-              fontFamily: "'Loli Candy', cursive",
+              fontFamily: "'Comfortaa', cursive",
               fontSize: 'clamp(2.5rem, 6vw, 4rem)',
               color: '#f5f0e8',
               marginTop: '15px',
@@ -408,7 +408,7 @@ export default function GolfGame({ onComplete }: GolfGameProps) {
           </span>
           
           <h1 style={{
-            fontFamily: "'Loli Candy', cursive",
+            fontFamily: "'Comfortaa', cursive",
             fontSize: 'clamp(1.8rem, 5vw, 2.8rem)',
             color: '#f5f0e8',
             marginTop: '20px',
@@ -419,7 +419,7 @@ export default function GolfGame({ onComplete }: GolfGameProps) {
             Вы приглашены на свадьбу
           </h1>
           <h2 style={{
-            fontFamily: "'Loli Candy', cursive",
+            fontFamily: "'Comfortaa', cursive",
             fontSize: 'clamp(2.5rem, 7vw, 4.5rem)',
             color: '#e8b860',
             marginBottom: '30px',

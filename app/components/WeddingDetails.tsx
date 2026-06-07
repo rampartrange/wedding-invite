@@ -33,7 +33,7 @@ export default function WeddingDetails() {
             fontSize: 'clamp(2.2rem, 6vw, 3.5rem)',
             color: '#2b52a3',
             marginBottom: '15px',
-            fontFamily: "'Loli Candy', cursive",
+            fontFamily: "'Comfortaa', cursive",
             fontWeight: 400,
             textAlign: 'center',
           }}>
@@ -73,7 +73,7 @@ export default function WeddingDetails() {
                   fontSize: '1.6rem',
                   marginBottom: '8px',
                   color: '#2b52a3',
-                  fontFamily: "'Loli Candy', cursive",
+                  fontFamily: "'Comfortaa', cursive",
                   fontWeight: 400,
                 }}>
                   Когда
@@ -93,7 +93,7 @@ export default function WeddingDetails() {
                   fontSize: '1.6rem',
                   marginBottom: '8px',
                   color: '#2b52a3',
-                  fontFamily: "'Loli Candy', cursive",
+                  fontFamily: "'Comfortaa', cursive",
                   fontWeight: 400,
                 }}>
                   Где
@@ -111,7 +111,7 @@ export default function WeddingDetails() {
                     fontFamily: "'Nunito Sans', sans-serif",
                     fontWeight: 400,
                   }}>
-                    <a href="https://yandex.ru/maps/-/CPdGR49Y" target="_blank" rel="noopener noreferrer" style={{ color: '#2c2c2c', textDecoration: 'none', borderBottom: '1px dashed #2b52a3' }}>
+                    <a href="https://yandex.ru/maps/org/gelendzhik_golf_rezort/112258572117?si=vzup2y74ufbvhdnhkc4343715m" target="_blank" rel="noopener noreferrer" style={{ color: '#2c2c2c', textDecoration: 'none', borderBottom: '1px dashed #2b52a3' }}>
                       Краснодарский край, г. Геленджик, ул. Стартовая, д. 1, корп. 2
                     </a>
                   </p>

@@ -9,7 +9,7 @@ export default function Dresscode() {
             fontSize: 'clamp(2.2rem, 6vw, 3.5rem)',
             color: '#b8505f',
             marginBottom: '15px',
-            fontFamily: "'Loli Candy', cursive",
+            fontFamily: "'Comfortaa', cursive",
             fontWeight: 400,
             animation: 'fadeInUp 0.8s ease-out forwards',
             textAlign: 'center',
@@ -65,7 +65,7 @@ export default function Dresscode() {
                 fontSize: '1.3rem',
                 color: '#b8505f',
                 marginBottom: '15px',
-                fontFamily: "'Loli Candy', cursive",
+                fontFamily: "'Comfortaa', cursive",
                 fontWeight: 400,
               }}>
                 Важные моменты
