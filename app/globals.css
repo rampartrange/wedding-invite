@@ -1,0 +1,355 @@
+@font-face {
+  font-family: 'LoliCandy';
+  src: url('https://fonts.googleapis.com/css2?family=Loli+Candy&display=swap');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background: #b8505f;
+  color: #2c2c2c;
+  overflow-x: hidden;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'LoliCandy', cursive;
+  font-weight: 400;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0); opacity: 0; }
+  80% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fade-in-delay-1 {
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-2 {
+  animation: fadeInUp 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-3 {
+  animation: fadeInUp 0.8s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+/* New bright color palette */
+.bg-primary {
+  background: #b8505f;
+}
+
+.bg-olive {
+  background: #9ea84b;
+}
+
+.bg-cream {
+  background: #f5f0e8;
+}
+
+.bg-white {
+  background: #ffffff;
+}
+
+.bg-rose {
+  background: #c55a6a;
+}
+
+.bg-dark-rose {
+  background: #a04050;
+}
+
+.accent-gold {
+  color: #e8b860;
+}
+
+.accent-olive {
+  color: #9ea84b;
+}
+
+.accent-rose {
+  color: #b8505f;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Card style */
+.card {
+  background: #f5f0e8;
+  border-radius: 24px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-white {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Decorative doodle line */
+.doodle-line {
+  width: 80px;
+  height: 4px;
+  background: #e8b860;
+  margin: 0 auto 30px;
+  border-radius: 4px;
+}
+
+.doodle-line-olive {
+  width: 80px;
+  height: 4px;
+  background: #9ea84b;
+  margin: 0 auto 30px;
+  border-radius: 4px;
+}
+
+/* Buttons */
+.button-primary {
+  padding: 16px 40px;
+  background: #e8b860;
+  border: none;
+  border-radius: 50px;
+  color: #2c2c2c;
+  font-family: 'LoliCandy', cursive;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(232, 184, 96, 0.4);
+}
+
+.button-primary:hover {
+  background: #f0c870;
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(232, 184, 96, 0.5);
+}
+
+.button-rose {
+  padding: 16px 40px;
+  background: #b8505f;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  font-family: 'LoliCandy', cursive;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(184, 80, 95, 0.4);
+}
+
+.button-rose:hover {
+  background: #c55a6a;
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(184, 80, 95, 0.5);
+}
+
+.button-outline {
+  padding: 12px 30px;
+  background: transparent;
+  border: 2px solid #e8b860;
+  border-radius: 50px;
+  color: #e8b860;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-outline:hover {
+  background: #e8b860;
+  color: #2c2c2c;
+  transform: scale(1.05);
+}
+
+/* Tag/pill style */
+.tag {
+  display: inline-block;
+  padding: 8px 20px;
+  background: #e8b860;
+  color: #2c2c2c;
+  border-radius: 30px;
+  font-family: 'LoliCandy', cursive;
+  font-size: 1rem;
+}
+
+.tag-rose {
+  display: inline-block;
+  padding: 8px 20px;
+  background: #b8505f;
+  color: #ffffff;
+  border-radius: 30px;
+  font-family: 'LoliCandy', cursive;
+  font-size: 1rem;
+}
+
+/* Section icon */
+.section-icon {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Highlight box */
+.highlight-box {
+  background: #f5f0e8;
+  border-radius: 16px;
+  padding: 25px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.highlight-box-olive {
+  background: #9ea84b;
+  border-radius: 16px;
+  padding: 25px;
+  margin: 20px 0;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* Color dot for dresscode */
+.color-dot {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+  display: inline-block;
+  transition: transform 0.3s ease;
+  border: 3px solid #ffffff;
+}
+
+.color-dot:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* Divider */
+.divider {
+  width: 40px;
+  height: 2px;
+  background: #e8b860;
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+/* Olive stripe decoration (like reference image) */
+.olive-stripe {
+  height: 60px;
+  background: #9ea84b;
+  width: 100%;
+  margin: 40px 0;
+}
+
+/* Text colors */
+.text-gold {
+  color: #e8b860;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-dark {
+  color: #2c2c2c;
+}
+
+.text-rose {
+  color: #b8505f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 16px;
+  }
+  
+  .card, .card-white {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+}
