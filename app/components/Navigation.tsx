@@ -3,38 +3,25 @@
 import { useState, useEffect } from 'react'
 
 export default function Navigation() {
-  const [isVisible, setIsVisible] = useState(false)
   const [activeSection, setActiveSection] = useState('')
 
   useEffect(() => {
+    const sections = ['details', 'timeline', 'location', 'dresscode', 'gifts', 'contacts', 'survey']
     const handleScroll = () => {
-      const scrollY = window.scrollY
-      setIsVisible(scrollY > window.innerHeight * 0.8)
-
-      // Determine active section
-      const sections = ['details', 'timeline', 'location', 'dresscode', 'gifts', 'contacts', 'survey', 'final']
-      for (const section of sections.reverse()) {
-        const element = document.getElementById(section)
-        if (element) {
-          const rect = element.getBoundingClientRect()
-          if (rect.top <= 200) {
-            setActiveSection(section)
-            break
-          }
+      for (const id of [...sections].reverse()) {
+        const el = document.getElementById(id)
+        if (el && el.getBoundingClientRect().top <= 120) {
+          setActiveSection(id)
+          return
         }
       }
+      setActiveSection('')
     }
-
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const scrollTo = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
+  const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 
   const items = [
     { id: 'details', label: 'О свадьбе' },
@@ -46,51 +33,39 @@ export default function Navigation() {
     { id: 'survey', label: 'Анкета' },
   ]
 
-  if (!isVisible) return null
-
   return (
     <nav style={{
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      right: 0,
-      background: 'rgba(255, 255, 255, 0.95)',
-      backdropFilter: 'blur(10px)',
-      boxShadow: '0 2px 20px rgba(0,0,0,0.1)',
-      zIndex: 1000,
-      padding: '12px 20px',
-      transition: 'all 0.3s ease',
+      position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1000,
+      padding: '14px 40px', display: 'flex', alignItems: 'center',
+      justifyContent: 'space-between',
+      background: 'rgba(245, 240, 232, 0.97)',
+      backdropFilter: 'blur(8px)',
+      borderBottom: '3px solid #b8505f',
     }}>
-      <div style={{
-        maxWidth: '1200px',
-        margin: '0 auto',
-        display: 'flex',
-        justifyContent: 'center',
-        gap: 'clamp(10px, 2vw, 25px)',
-        flexWrap: 'wrap',
-      }}>
-        {items.map(item => (
-          <button
-            key={item.id}
-            onClick={() => scrollTo(item.id)}
-            style={{
-              fontSize: 'clamp(0.75rem, 1.5vw, 0.9rem)',
-              color: activeSection === item.id ? '#e8b860' : '#2c2c2c',
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              padding: '8px 12px',
-              transition: 'all 0.3s ease',
-              borderBottom: activeSection === item.id ? '3px solid #e8b860' : '3px solid transparent',
-              fontFamily: "'Nunito Sans', sans-serif",
-              fontWeight: activeSection === item.id ? 700 : 400,
-              whiteSpace: 'nowrap',
-            }}
-          >
-            {item.label}
-          </button>
-        ))}
+      <div style={{ fontFamily: "'Comfortaa', cursive", color: '#b8505f', fontSize: '1rem', fontWeight: 400, letterSpacing: '0.03em' }}>
+        Артём &amp; Вита
       </div>
+      <ul style={{ display: 'flex', gap: 'clamp(12px,2vw,28px)', listStyle: 'none', flexWrap: 'wrap' }}>
+        {items.map(item => (
+          <li key={item.id}>
+            <button
+              onClick={() => scrollTo(item.id)}
+              style={{
+                background: 'none', border: 'none', cursor: 'pointer',
+                fontFamily: "'Nunito Sans', sans-serif", fontSize: 'clamp(0.75rem,1.5vw,0.9rem)',
+                fontWeight: activeSection === item.id ? 700 : 400,
+                color: activeSection === item.id ? '#b8505f' : '#2c2c2c',
+                borderBottom: activeSection === item.id ? '2px solid #b8505f' : '2px solid transparent',
+                paddingBottom: '2px', transition: 'all 0.2s',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.color = '#b8505f' }}
+              onMouseLeave={e => { e.currentTarget.style.color = activeSection === item.id ? '#b8505f' : '#2c2c2c' }}
+            >
+              {item.label}
+            </button>
+          </li>
+        ))}
+      </ul>
     </nav>
   )
 }

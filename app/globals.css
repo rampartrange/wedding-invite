@@ -71,6 +71,35 @@ h1, h2, h3, h4 {
   100% { transform: scale(1); opacity: 1; }
 }
 
+@keyframes rotateRing {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* Timeline 4-col grid */
+.timeline-4col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 3px solid #e8b860;
+}
+
+@media (max-width: 768px) {
+  .timeline-4col {
+    grid-template-columns: 1fr 1fr;
+  }
+  .two-col-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+  .airports-3col {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 .fade-in {
   animation: fadeInUp 0.8s ease-out forwards;
 }
