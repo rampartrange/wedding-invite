@@ -84,7 +84,7 @@ export default function Survey() {
             color: '#ffffff',
             lineHeight: 1.7,
             maxWidth: '600px',
-            margin: '0 auto 30px',
+            margin: '0 auto 16px',
             textAlign: 'center',
             fontFamily: "'Nunito Sans', sans-serif",
             fontWeight: 400,
@@ -92,6 +92,29 @@ export default function Survey() {
             Пожалуйста, заполните короткую анкету, чтобы мы могли лучше подготовиться к мероприятию
             и учесть все ваши пожелания.
           </p>
+
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '10px',
+            maxWidth: '600px',
+            margin: '0 auto 30px',
+            background: 'rgba(255, 255, 255, 0.2)',
+            borderRadius: '14px',
+            padding: '12px 20px',
+          }}>
+            <span style={{ fontSize: '1.2rem' }}>📅</span>
+            <p style={{
+              fontSize: '1rem',
+              color: '#ffffff',
+              fontFamily: "'Nunito Sans', sans-serif",
+              fontWeight: 700,
+              margin: 0,
+            }}>
+              Подтвердите своё присутствие до <span style={{ textDecoration: 'underline' }}>31 июля 2026 года</span>
+            </p>
+          </div>
 
           <div style={{
             display: 'flex',

@@ -19,7 +19,8 @@ export default function WeddingDetails() {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            opacity: 0.35,
+            opacity: 0.7,
+            filter: 'brightness(0.9)',
           }}
         />
         {/* Image overlay removed */}
@@ -97,16 +98,6 @@ export default function WeddingDetails() {
                 }}>
                   Где
                 </h3>
-                <p style={{
-                  fontSize: '1.2rem',
-                  color: '#2c2c2c',
-                  fontFamily: "'Nunito Sans', sans-serif",
-                  fontWeight: 400,
-                }}>
-                  <a href="https://yandex.ru/maps/-/CPdGR49Y" target="_blank" rel="noopener noreferrer" style={{ color: '#2b52a3', textDecoration: 'underline', fontWeight: 500 }}>
-                    Гольф Резорт Геленджик Академия
-                  </a>
-                </p>
                 <div style={{
                   textAlign: 'center',
                   marginTop: '10px',

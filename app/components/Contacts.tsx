@@ -2,7 +2,7 @@
 
 export default function Contacts() {
   return (
-    <section id="contacts" style={{ background: 'rgba(43, 82, 163, 0.8)', padding: '80px 20px' }}>
+    <section id="contacts" style={{ background: '#4E8FA8', padding: '80px 20px' }}>
       <div className="container" style={{ maxWidth: '900px', margin: '0 auto' }}>
         <div>
           <h2 style={{
@@ -21,7 +21,7 @@ export default function Contacts() {
 
           <p style={{
             fontSize: '1.05rem',
-            color: '#e8b860',
+            color: '#F5A800',
             lineHeight: 1.7,
             maxWidth: '600px',
             margin: '0 auto 40px',
@@ -51,8 +51,8 @@ export default function Contacts() {
               onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)'}
               onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0) scale(1)'}
             >
-              <div style={{ fontSize: '2.5rem', marginBottom: '15px' }}>
-                📱
+              <div style={{ marginBottom: '15px' }}>
+                <img src="/images/telegram.jpeg" alt="Telegram" style={{ width: '56px', height: '56px', borderRadius: '50%', objectFit: 'cover' }} />
               </div>
               <h3 style={{
                 fontSize: '1.4rem',
@@ -105,8 +105,8 @@ export default function Contacts() {
               onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)'}
               onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0) scale(1)'}
             >
-              <div style={{ fontSize: '2.5rem', marginBottom: '15px' }}>
-                💬
+              <div style={{ marginBottom: '15px' }}>
+                <img src="/images/max.jpeg" alt="MAX" style={{ width: '56px', height: '56px', borderRadius: '14px', objectFit: 'cover' }} />
               </div>
               <h3 style={{
                 fontSize: '1.4rem',
@@ -115,7 +115,7 @@ export default function Contacts() {
                 fontFamily: "'LoliCandy', cursive",
                 fontWeight: 400,
               }}>
-                MAX (Mail.ru Агент)
+                MAX
               </h3>
               <p style={{
                 fontSize: '0.9rem',

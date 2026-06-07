@@ -48,31 +48,83 @@ export default function Location() {
               <h3 style={{
                 fontSize: '1.4rem',
                 color: '#b8505f',
-                marginBottom: '15px',
+                marginBottom: '20px',
                 fontFamily: "'LoliCandy', cursive",
                 fontWeight: 400,
               }}>
                 ✈️ Аэропорты поблизости
               </h3>
-              <ul style={{
-                listStyle: 'none',
-                padding: 0,
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+                gap: '16px',
               }}>
-                {['Геленджик', 'Краснодар', 'Минеральные Воды'].map((airport, i) => (
-                  <li key={i} style={{
-                    fontSize: '1rem',
-                    color: '#2c2c2c',
-                    padding: '8px 0',
+                {[
+                  {
+                    name: 'Геленджик',
+                    distance: '30 мин',
+                    scene: ['🌊', '⛵', '🏖️'],
+                    bg: 'linear-gradient(135deg, #dbeeff 0%, #b8d9f5 100%)',
+                    accent: '#2b7ec1',
+                  },
+                  {
+                    name: 'Краснодар',
+                    distance: '3 часа',
+                    scene: ['🌻', '🌾', '🚂'],
+                    bg: 'linear-gradient(135deg, #fff9db 0%, #fde87a 100%)',
+                    accent: '#b08000',
+                  },
+                  {
+                    name: 'Сочи',
+                    distance: '5 часов',
+                    scene: ['🏔️', '🌴', '🌅'],
+                    bg: 'linear-gradient(135deg, #e8f5e9 0%, #a8d5a2 100%)',
+                    accent: '#2e7d32',
+                  },
+                ].map((airport) => (
+                  <div key={airport.name} style={{
+                    background: airport.bg,
+                    borderRadius: '16px',
+                    padding: '20px 16px',
                     display: 'flex',
+                    flexDirection: 'column',
                     alignItems: 'center',
                     gap: '10px',
-                    fontFamily: "'Nunito Sans', sans-serif",
-                    fontWeight: 400,
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
                   }}>
-                    <span style={{ color: '#e8b860', fontSize: '1.2rem' }}>●</span> {airport}
-                  </li>
+                    <div style={{ fontSize: '2.2rem', lineHeight: 1, letterSpacing: '2px' }}>
+                      {airport.scene.join(' ')}
+                    </div>
+                    <div style={{
+                      fontSize: '1.15rem',
+                      color: airport.accent,
+                      fontFamily: "'LoliCandy', cursive",
+                      fontWeight: 400,
+                      textAlign: 'center',
+                    }}>
+                      {airport.name}
+                    </div>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      background: 'rgba(255,255,255,0.7)',
+                      borderRadius: '30px',
+                      padding: '5px 14px',
+                    }}>
+                      <span style={{ fontSize: '0.9rem' }}>✈️</span>
+                      <span style={{
+                        fontSize: '0.85rem',
+                        fontWeight: 700,
+                        color: '#2c2c2c',
+                        fontFamily: "'Nunito Sans', sans-serif",
+                      }}>
+                        {airport.distance} до площадки
+                      </span>
+                    </div>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
 
             <div style={{

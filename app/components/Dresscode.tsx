@@ -83,9 +83,13 @@ export default function Dresscode() {
                   <span style={{ color: '#b8505f', fontWeight: 700 }}>*</span>
                   <span>Вечером может быть прохладно — возьмите лёгкую накидку или пиджак</span>
                 </li>
-                <li style={{ display: 'flex', gap: '10px' }}>
+                <li style={{ display: 'flex', gap: '10px', marginBottom: '10px' }}>
                   <span style={{ color: '#b8505f', fontWeight: 700 }}>*</span>
                   <span>Выбирайте устойчивую обувь — мероприятие пройдёт на лужайке</span>
+                </li>
+                <li style={{ display: 'flex', gap: '10px' }}>
+                  <span style={{ color: '#b8505f', fontWeight: 700 }}>*</span>
+                  <span>Отдавайте предпочтение лёгким тканям — конец августа на юге ещё очень жаркий</span>
                 </li>
               </ul>
             </div>

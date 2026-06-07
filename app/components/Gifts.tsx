@@ -2,8 +2,23 @@
 
 export default function Gifts() {
   return (
-    <section id="gifts" style={{ background: 'rgba(184, 80, 95, 0.8)', padding: '80px 20px' }}>
-      <div className="container" style={{ maxWidth: '900px', margin: '0 auto' }}>
+    <section id="gifts" style={{ padding: '80px 20px', position: 'relative', overflow: 'hidden' }}>
+      <img
+        src="/images/gifts-background.png"
+        alt=""
+        aria-hidden="true"
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          pointerEvents: 'none',
+          userSelect: 'none',
+        }}
+      />
+      <div className="container" style={{ maxWidth: '900px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
         <div>
           <h2 style={{
             fontSize: 'clamp(2.2rem, 6vw, 3.5rem)',
