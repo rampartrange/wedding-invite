@@ -6,7 +6,6 @@ const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx8hhV2hRu7Un
 
 export default function Survey() {
   const [isSubmitted, setIsSubmitted] = useState(false)
-  const [useIframe, setUseIframe] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState('')
 
@@ -137,82 +136,7 @@ export default function Survey() {
             </p>
           </div>
 
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            gap: '15px',
-            marginBottom: '30px',
-          }}>
-            <button
-              onClick={() => setUseIframe(true)}
-              className={useIframe ? 'button-primary' : 'button-outline'}
-              style={{ fontSize: '0.9rem', fontFamily: "'Nunito Sans', sans-serif", fontWeight: 400 }}
-            >
-              Через Google Form
-            </button>
-            <button
-              onClick={() => setUseIframe(false)}
-              className={!useIframe ? 'button-primary' : 'button-outline'}
-              style={{ fontSize: '0.9rem', fontFamily: "'Nunito Sans', sans-serif", fontWeight: 400 }}
-            >
-              Заполнить на сайте
-            </button>
-          </div>
-
-          {useIframe ? (
-            <div style={{
-              backgroundColor: '#ffffff',
-              borderRadius: '24px',
-              boxShadow: '0 8px 30px rgba(0, 0, 0, 0.15)',
-              padding: '40px',
-              textAlign: 'left',
-            }}>
-              <div style={{
-                backgroundColor: 'rgba(232, 184, 96, 0.2)',
-                padding: '20px',
-                borderRadius: '16px',
-                marginBottom: '20px',
-              }}>
-                <p style={{
-                  fontSize: '0.9rem',
-                  color: '#2c2c2c',
-                  lineHeight: 1.6,
-                  fontFamily: "'Nunito Sans', sans-serif",
-                  fontWeight: 400,
-                }}>
-                  <strong>Для организатора:</strong> Чтобы анкета работала и результаты записывались в Google Таблицу:
-                </p>
-                <ol style={{
-                  fontSize: '0.9rem',
-                  color: '#2c2c2c',
-                  lineHeight: 1.6,
-                  marginTop: '10px',
-                  paddingLeft: '20px',
-                  fontFamily: "'Nunito Sans', sans-serif",
-                  fontWeight: 400,
-                }}>
-                  <li>Создайте форму на <a href="https://forms.google.com" target="_blank" rel="noopener noreferrer" style={{ color: '#b8505f' }}>forms.google.com</a></li>
-                  <li>С вопросами: Имя, Присутствие, Напитки, Аллергия</li>
-                  <li>Нажмите Отправить - скопируйте URL iframe</li>
-                  <li>Вставьте URL в файл app/components/Survey.tsx в переменную GOOGLE_FORM_URL</li>
-                </ol>
-              </div>
-
-              <iframe
-                src={GOOGLE_SCRIPT_URL}
-                width="100%"
-                height="800"
-                style={{
-                  border: 'none',
-                  borderRadius: '16px',
-                }}
-                title="Анкета гостя"
-              >
-                Загрузка формы...
-              </iframe>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} style={{
+          <form onSubmit={handleSubmit} style={{
               backgroundColor: '#ffffff',
               borderRadius: '24px',
               boxShadow: '0 8px 30px rgba(0, 0, 0, 0.15)',
@@ -400,19 +324,8 @@ export default function Survey() {
               >
                 {isLoading ? 'Отправляем...' : 'Отправить ответ'}
               </button>
-            </form>
-          )}
+          </form>
 
-          <p style={{
-            fontSize: '0.85rem',
-            color: 'rgba(255,255,255,0.8)',
-            marginTop: '20px',
-            textAlign: 'center',
-            fontFamily: "'Nunito Sans', sans-serif",
-            fontWeight: 400,
-          }}>
-            Для записи в Google Таблицу переключитесь на режим Через Google Form и следуйте инструкции
-          </p>
         </div>
       </div>
     </div>

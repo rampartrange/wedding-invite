@@ -1,5 +1,19 @@
 'use client'
 
+const MAPS_WEB_URL = 'https://yandex.ru/maps/org/gelendzhik_golf_rezort/112258572117'
+const MAPS_APP_URL = 'yandexmaps://maps.yandex.ru/?oid=112258572117&ol=biz'
+
+function openMaps(e: React.MouseEvent<HTMLAnchorElement>) {
+  e.preventDefault()
+  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+    const fallback = setTimeout(() => { window.location.href = MAPS_WEB_URL }, 1500)
+    window.addEventListener('blur', () => clearTimeout(fallback), { once: true })
+    window.location.href = MAPS_APP_URL
+  } else {
+    window.open(MAPS_WEB_URL, '_blank')
+  }
+}
+
 export default function Location() {
   return (
     <section id="location" style={{ background: 'rgba(158, 168, 75, 0.8)', padding: '80px 20px' }}>
@@ -170,7 +184,7 @@ export default function Location() {
                 fontWeight: 400,
               }}>
                 <strong>Адрес:</strong>{' '}
-                <a href="https://yandex.ru/maps/org/gelendzhik_golf_rezort/112258572117?si=vzup2y74ufbvhdnhkc4343715m" target="_blank" rel="noopener noreferrer" style={{ color: '#2c2c2c', textDecoration: 'none', borderBottom: '1px dashed #9ea84b', cursor: 'pointer' }}>
+                <a href={MAPS_WEB_URL} onClick={openMaps} rel="noopener noreferrer" style={{ color: '#2c2c2c', textDecoration: 'none', borderBottom: '1px dashed #9ea84b', cursor: 'pointer' }}>
                   Краснодарский край, г. Геленджик, ул. Стартовая, д. 1, корп. 2
                 </a>
               </p>

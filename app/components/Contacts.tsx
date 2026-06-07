@@ -21,7 +21,7 @@ export default function Contacts() {
 
           <p style={{
             fontSize: '1.05rem',
-            color: '#F5A800',
+            color: '#ffffff',
             lineHeight: 1.7,
             maxWidth: '600px',
             margin: '0 auto 40px',

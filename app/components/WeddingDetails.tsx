@@ -1,5 +1,19 @@
 'use client'
 
+const MAPS_WEB_URL = 'https://yandex.ru/maps/org/gelendzhik_golf_rezort/112258572117'
+const MAPS_APP_URL = 'yandexmaps://maps.yandex.ru/?oid=112258572117&ol=biz'
+
+function openMaps(e: React.MouseEvent<HTMLAnchorElement>) {
+  e.preventDefault()
+  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+    const fallback = setTimeout(() => { window.location.href = MAPS_WEB_URL }, 1500)
+    window.addEventListener('blur', () => clearTimeout(fallback), { once: true })
+    window.location.href = MAPS_APP_URL
+  } else {
+    window.open(MAPS_WEB_URL, '_blank')
+  }
+}
+
 export default function WeddingDetails() {
   return (
     <section id="details" style={{ position: 'relative', padding: '80px 20px', overflow: 'hidden' }}>
@@ -31,7 +45,7 @@ export default function WeddingDetails() {
         <div style={{ animation: 'fadeInUp 0.8s ease-out forwards' }}>
           <h2 style={{
             fontSize: 'clamp(2.2rem, 6vw, 3.5rem)',
-            color: '#2b52a3',
+            color: '#c4405e',
             marginBottom: '15px',
             fontFamily: "'Comfortaa', cursive",
             fontWeight: 400,
@@ -40,7 +54,7 @@ export default function WeddingDetails() {
             Дорогие друзья!
           </h2>
 
-          <div className="doodle-line" />
+          <div className="doodle-line" style={{ background: '#c4405e' }} />
 
           <p style={{
             fontSize: 'clamp(1.1rem, 2.5vw, 1.3rem)',
@@ -111,7 +125,7 @@ export default function WeddingDetails() {
                     fontFamily: "'Nunito Sans', sans-serif",
                     fontWeight: 400,
                   }}>
-                    <a href="https://yandex.ru/maps/org/gelendzhik_golf_rezort/112258572117?si=vzup2y74ufbvhdnhkc4343715m" target="_blank" rel="noopener noreferrer" style={{ color: '#2c2c2c', textDecoration: 'none', borderBottom: '1px dashed #2b52a3' }}>
+                    <a href={MAPS_WEB_URL} onClick={openMaps} rel="noopener noreferrer" style={{ color: '#2c2c2c', textDecoration: 'none', borderBottom: '1px dashed #2b52a3' }}>
                       Краснодарский край, г. Геленджик, ул. Стартовая, д. 1, корп. 2
                     </a>
                   </p>
