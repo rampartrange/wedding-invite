@@ -2,11 +2,13 @@
 
 import { useState } from 'react'
 
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true'
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx8hhV2hRu7UnUXEnqEdAYIlH1pgQHOlH0FKLb3wSjk62R8Uy5f-CD7q0XPPAsHLL-T6A/exec'
 
 export default function Survey() {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [useIframe, setUseIframe] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState('')
 
   const [formData, setFormData] = useState({
     name: '',
@@ -24,9 +26,28 @@ export default function Survey() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setIsSubmitted(true)
+    setIsLoading(true)
+    setError('')
+    try {
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          attendance: formData.attendance,
+          drinks: formData.drinks.join(', '),
+          allergy: formData.allergy,
+        }),
+      })
+      setIsSubmitted(true)
+    } catch {
+      setError('Не удалось отправить анкету. Проверьте соединение и попробуйте ещё раз.')
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   if (isSubmitted) {
@@ -41,7 +62,7 @@ export default function Survey() {
               fontSize: 'clamp(2rem, 6vw, 3rem)',
               color: '#ffffff',
               marginBottom: '15px',
-              fontFamily: "'LoliCandy', cursive",
+              fontFamily: "'Loli Candy', cursive",
               fontWeight: 400,
             }}>
               Спасибо за ответ!
@@ -69,7 +90,7 @@ export default function Survey() {
             fontSize: 'clamp(2.2rem, 6vw, 3.5rem)',
             color: '#ffffff',
             marginBottom: '15px',
-            fontFamily: "'LoliCandy', cursive",
+            fontFamily: "'Loli Candy', cursive",
             fontWeight: 400,
             animation: 'fadeInUp 0.8s ease-out forwards',
             textAlign: 'center',
@@ -178,7 +199,7 @@ export default function Survey() {
               </div>
 
               <iframe
-                src={GOOGLE_FORM_URL}
+                src={GOOGLE_SCRIPT_URL}
                 width="100%"
                 height="800"
                 style={{
@@ -359,12 +380,25 @@ export default function Survey() {
                 />
               </div>
 
+              {error && (
+                <p style={{
+                  color: '#b8505f',
+                  fontSize: '0.9rem',
+                  marginBottom: '15px',
+                  fontFamily: "'Nunito Sans', sans-serif",
+                  textAlign: 'center',
+                }}>
+                  {error}
+                </p>
+              )}
+
               <button
                 type="submit"
+                disabled={isLoading}
                 className="button-primary"
-                style={{ width: '100%' }}
+                style={{ width: '100%', opacity: isLoading ? 0.7 : 1, cursor: isLoading ? 'not-allowed' : 'pointer' }}
               >
-                Отправить ответ
+                {isLoading ? 'Отправляем...' : 'Отправить ответ'}
               </button>
             </form>
           )}

@@ -33,7 +33,7 @@ export default function WeddingDetails() {
             fontSize: 'clamp(2.2rem, 6vw, 3.5rem)',
             color: '#2b52a3',
             marginBottom: '15px',
-            fontFamily: "'LoliCandy', cursive",
+            fontFamily: "'Loli Candy', cursive",
             fontWeight: 400,
             textAlign: 'center',
           }}>
@@ -73,7 +73,7 @@ export default function WeddingDetails() {
                   fontSize: '1.6rem',
                   marginBottom: '8px',
                   color: '#2b52a3',
-                  fontFamily: "'LoliCandy', cursive",
+                  fontFamily: "'Loli Candy', cursive",
                   fontWeight: 400,
                 }}>
                   Когда
@@ -93,7 +93,7 @@ export default function WeddingDetails() {
                   fontSize: '1.6rem',
                   marginBottom: '8px',
                   color: '#2b52a3',
-                  fontFamily: "'LoliCandy', cursive",
+                  fontFamily: "'Loli Candy', cursive",
                   fontWeight: 400,
                 }}>
                   Где

@@ -18,7 +18,7 @@ export default function Final() {
             color: '#e8b860',
             marginBottom: '25px',
             lineHeight: 1.3,
-            fontFamily: "'LoliCandy', cursive",
+            fontFamily: "'Loli Candy', cursive",
             fontWeight: 400,
           }}>
             Мы вас ждём!
@@ -45,7 +45,7 @@ export default function Final() {
             fontSize: 'clamp(1.6rem, 4vw, 2.4rem)',
             color: '#e8b860',
             marginTop: '20px',
-            fontFamily: "'LoliCandy', cursive",
+            fontFamily: "'Loli Candy', cursive",
             fontWeight: 400,
           }}>
             С любовью, Артём и Вита

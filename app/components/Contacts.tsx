@@ -9,7 +9,7 @@ export default function Contacts() {
             fontSize: 'clamp(2.2rem, 6vw, 3.5rem)',
             color: '#ffffff',
             marginBottom: '15px',
-            fontFamily: "'LoliCandy', cursive",
+            fontFamily: "'Loli Candy', cursive",
             fontWeight: 400,
             animation: 'fadeInUp 0.8s ease-out forwards',
             textAlign: 'center',
@@ -58,7 +58,7 @@ export default function Contacts() {
                 fontSize: '1.4rem',
                 color: '#2c2c2c',
                 marginBottom: '10px',
-                fontFamily: "'LoliCandy', cursive",
+                fontFamily: "'Loli Candy', cursive",
                 fontWeight: 400,
               }}>
                 Telegram
@@ -112,7 +112,7 @@ export default function Contacts() {
                 fontSize: '1.4rem',
                 color: '#2c2c2c',
                 marginBottom: '10px',
-                fontFamily: "'LoliCandy', cursive",
+                fontFamily: "'Loli Candy', cursive",
                 fontWeight: 400,
               }}>
                 MAX
@@ -164,7 +164,7 @@ export default function Contacts() {
               fontSize: '1.5rem',
               color: '#2c2c2c',
               marginBottom: '10px',
-              fontFamily: "'LoliCandy', cursive",
+              fontFamily: "'Loli Candy', cursive",
               fontWeight: 400,
             }}>
               Эля — наш организатор

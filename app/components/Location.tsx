@@ -9,7 +9,7 @@ export default function Location() {
             fontSize: 'clamp(2.2rem, 6vw, 3.5rem)',
             color: '#ffffff',
             marginBottom: '15px',
-            fontFamily: "'LoliCandy', cursive",
+            fontFamily: "'Loli Candy', cursive",
             fontWeight: 400,
             animation: 'fadeInUp 0.8s ease-out forwards',
             textAlign: 'center',
@@ -49,7 +49,7 @@ export default function Location() {
                 fontSize: '1.4rem',
                 color: '#b8505f',
                 marginBottom: '20px',
-                fontFamily: "'LoliCandy', cursive",
+                fontFamily: "'Loli Candy', cursive",
                 fontWeight: 400,
               }}>
                 ✈️ Аэропорты поблизости
@@ -98,7 +98,7 @@ export default function Location() {
                     <div style={{
                       fontSize: '1.15rem',
                       color: airport.accent,
-                      fontFamily: "'LoliCandy', cursive",
+                      fontFamily: "'Loli Candy', cursive",
                       fontWeight: 400,
                       textAlign: 'center',
                     }}>
@@ -136,7 +136,7 @@ export default function Location() {
                 fontSize: '1.3rem',
                 color: '#2c2c2c',
                 marginBottom: '10px',
-                fontFamily: "'LoliCandy', cursive",
+                fontFamily: "'Loli Candy', cursive",
                 fontWeight: 400,
               }}>
                 Важные рекомендации

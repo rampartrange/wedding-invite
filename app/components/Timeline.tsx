@@ -36,7 +36,7 @@ export default function Timeline() {
             fontSize: 'clamp(2.2rem, 6vw, 3.5rem)',
             color: '#9ea84b',
             marginBottom: '15px',
-            fontFamily: "'LoliCandy', cursive",
+            fontFamily: "'Loli Candy', cursive",
             fontWeight: 400,
             animation: 'fadeInUp 0.8s ease-out forwards',
             textAlign: 'center',
@@ -88,7 +88,7 @@ export default function Timeline() {
                     fontSize: '2rem',
                     color: '#2b52a3',
                     marginBottom: '5px',
-                    fontFamily: "'LoliCandy', cursive",
+                    fontFamily: "'Loli Candy', cursive",
                     fontWeight: 400,
                   }}>
                     {item.time}
@@ -97,7 +97,7 @@ export default function Timeline() {
                     fontSize: '1.4rem',
                     color: '#2c2c2c',
                     marginBottom: '5px',
-                    fontFamily: "'LoliCandy', cursive",
+                    fontFamily: "'Loli Candy', cursive",
                     fontWeight: 400,
                   }}>
                     {item.title}

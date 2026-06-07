@@ -24,7 +24,7 @@ export default function Gifts() {
             fontSize: 'clamp(2.2rem, 6vw, 3.5rem)',
             color: '#f5f0e8',
             marginBottom: '15px',
-            fontFamily: "'LoliCandy', cursive",
+            fontFamily: "'Loli Candy', cursive",
             fontWeight: 400,
             animation: 'fadeInUp 0.8s ease-out forwards',
             textAlign: 'center',
@@ -64,7 +64,7 @@ export default function Gifts() {
                 fontSize: '1.3rem',
                 color: '#b8505f',
                 marginBottom: '10px',
-                fontFamily: "'LoliCandy', cursive",
+                fontFamily: "'Loli Candy', cursive",
                 fontWeight: 400,
               }}>
                 Если хотите что-то подарить
@@ -90,7 +90,7 @@ export default function Gifts() {
                 fontSize: '1.3rem',
                 color: '#b8505f',
                 marginBottom: '10px',
-                fontFamily: "'LoliCandy', cursive",
+                fontFamily: "'Loli Candy', cursive",
                 fontWeight: 400,
               }}>
                 Просьба без цветов
