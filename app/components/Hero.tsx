@@ -28,31 +28,33 @@ export default function Hero() {
       <div style={{ textAlign: 'center', zIndex: 1, padding: '2rem', position: 'relative' }}>
         {/* Дата-бейдж */}
         <div style={{
-          fontFamily: "'Comfortaa', cursive", color: '#f5f0e8',
+          fontFamily: "'Zhizn', sans-serif", color: '#f5f0e8',
           fontSize: '0.95rem', textTransform: 'uppercase',
           marginBottom: '28px', background: '#b8505f',
           display: 'inline-block', padding: '5px 22px',
           transform: 'rotate(-1.5deg)', letterSpacing: '0.1em',
+          position: 'relative', top: '-25px',
         }}>
           24 · 08 · 2026
         </div>
 
-        <span style={{ display: 'block', fontFamily: "'Nunito Sans', sans-serif", fontSize: 'clamp(1rem,2.5vw,1.4rem)', color: '#888', marginBottom: '8px', fontStyle: 'italic' }}>
+        <span style={{ display: 'block', fontFamily: "'Zhizn', sans-serif", fontSize: 'clamp(1rem,2.5vw,1.4rem)', color: '#888', marginBottom: '8px', position: 'relative', top: '-25px' }}>
           Мы рады пригласить вас на нашу свадьбу
         </span>
 
         <h1 style={{
-          fontFamily: "'Comfortaa', cursive",
-          fontSize: 'clamp(2.4rem,11vw,8rem)',
+          fontFamily: "'Zhizn', sans-serif",
+          fontSize: 'clamp(2.5rem,11vw,8.5rem)',
           color: '#2b52a3', lineHeight: 0.95,
-          fontWeight: 400, letterSpacing: '-0.01em',
+          fontWeight: 500, letterSpacing: '-0.01em',
+          marginBottom: '6px',
         }}>
           Артём<span style={{ color: '#b8505f' }}>&</span>Вита
         </h1>
 
-        <div style={{ width: '60px', height: '5px', background: '#e8b860', margin: '20px auto', transform: 'rotate(-1deg)', borderRadius: '3px' }} />
+        <div style={{ width: '60px', height: '5px', background: '#e8b860', margin: '6px auto 18px', transform: 'rotate(-1deg)', borderRadius: '3px' }} />
 
-        <span style={{ display: 'block', fontFamily: "'Nunito Sans', sans-serif", fontSize: 'clamp(1rem,2.5vw,1.3rem)', color: '#9ea84b', fontWeight: 600 }}>
+        <span style={{ display: 'block', fontFamily: "'Zhizn', sans-serif", fontSize: 'clamp(1rem,2.5vw,1.3rem)', color: '#9ea84b', fontWeight: 600 }}>
           Гольф Резорт · Геленджик · Краснодарский край
         </span>
       </div>
@@ -61,7 +63,7 @@ export default function Hero() {
       <div style={{
         position: 'absolute', bottom: '40px', left: '50%',
         display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px',
-        color: '#aaa', fontFamily: "'Nunito Sans', sans-serif", fontSize: '0.9rem',
+        color: '#aaa', fontFamily: "'Zhizn', sans-serif", fontSize: '0.9rem',
         animationName: 'scrollBounce', animationDuration: '2s',
         animationTimingFunction: 'ease-in-out', animationIterationCount: 'infinite',
       }}>

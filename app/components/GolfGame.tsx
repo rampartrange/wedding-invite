@@ -110,21 +110,22 @@ export default function GolfGame({ onComplete }: Props) {
 
         {/* Дата-бейдж — как в Hero */}
         <div style={{
-          fontFamily: "'Comfortaa', cursive", color: '#f5f0e8',
+          fontFamily: "'Zhizn', sans-serif", color: '#f5f0e8',
           fontSize: '0.9rem', textTransform: 'uppercase',
           marginBottom: '24px', background: '#b8505f',
           display: 'inline-block', padding: '5px 22px',
           transform: 'rotate(-1.5deg)', letterSpacing: '0.1em',
+          position: 'relative', top: '-25px',
         }}>
           Поздравляем!
         </div>
 
-        <span style={{ display: 'block', fontFamily: "'Nunito Sans', sans-serif", fontSize: 'clamp(1rem,2.5vw,1.3rem)', color: '#888', marginBottom: '8px', fontStyle: 'italic' }}>
+        <span style={{ display: 'block', fontFamily: "'Zhizn', sans-serif", fontSize: 'clamp(1rem,2.5vw,1.3rem)', color: '#888', marginBottom: '8px', position: 'relative', top: '-25px' }}>
           Вы приглашены на свадьбу
         </span>
 
         <h1 style={{
-          fontFamily: "'Comfortaa', cursive", fontWeight: 400,
+          fontFamily: "'Zhizn', sans-serif", fontWeight: 400,
           fontSize: 'clamp(3rem,10vw,7rem)',
           color: '#2b52a3', lineHeight: 0.95,
           letterSpacing: '-0.01em', marginBottom: '0',
@@ -134,7 +135,7 @@ export default function GolfGame({ onComplete }: Props) {
 
         <div style={{ width: '60px', height: '5px', background: '#e8b860', margin: '20px auto', transform: 'rotate(-1deg)', borderRadius: '3px' }} />
 
-        <span style={{ display: 'block', fontFamily: "'Nunito Sans', sans-serif", fontSize: 'clamp(0.9rem,2vw,1.1rem)', color: '#9ea84b', fontWeight: 600, marginBottom: '36px' }}>
+        <span style={{ display: 'block', fontFamily: "'Zhizn', sans-serif", fontSize: 'clamp(0.9rem,2vw,1.1rem)', color: '#9ea84b', fontWeight: 600, marginBottom: '36px' }}>
           Golf Resort · Геленджик · 24.08.2026
         </span>
 
@@ -179,14 +180,14 @@ export default function GolfGame({ onComplete }: Props) {
         pointerEvents: 'none',
       }}>
         <div style={{
-          fontFamily: "'Comfortaa', cursive", color: '#b8505f',
+          fontFamily: "'Zhizn', sans-serif", color: '#b8505f',
           fontSize: 'clamp(1.3rem,4vw,2rem)', fontWeight: 400,
           animationName: 'pulse', animationDuration: '2.5s', animationIterationCount: 'infinite',
           marginBottom: '8px',
         }}>
           Закатите шар в лунку, чтобы открыть приглашение
         </div>
-        <div style={{ fontFamily: "'Nunito Sans', sans-serif", color: '#9ea84b', fontSize: 'clamp(0.85rem,2vw,1.1rem)', fontStyle: 'italic' }}>
+        <div style={{ fontFamily: "'Zhizn', sans-serif", color: '#9ea84b', fontSize: 'clamp(0.85rem,2vw,1.1rem)' }}>
           Golf Resort Gelendzhik · 24.08.2026
         </div>
       </div>
@@ -237,7 +238,7 @@ export default function GolfGame({ onComplete }: Props) {
           position: 'fixed', bottom: '28px', right: '28px',
           background: 'transparent', border: '2px solid rgba(184,80,95,0.35)',
           borderRadius: '30px', color: '#b8505f',
-          fontFamily: "'Nunito Sans', sans-serif", fontSize: '0.9rem',
+          fontFamily: "'Zhizn', sans-serif", fontSize: '0.9rem',
           fontWeight: 400, padding: '8px 18px', cursor: 'pointer',
           transition: 'all 0.2s',
         }}

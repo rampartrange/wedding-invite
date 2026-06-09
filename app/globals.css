@@ -1,4 +1,18 @@
 
+@font-face {
+  font-family: 'Zhizn';
+  src: url('/fonts/ZHIZN.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Battley Rus';
+  src: url('/fonts/BATTLEY RUS.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +24,7 @@ html {
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Zhizn', sans-serif;
   background: #b8505f;
   color: #2c2c2c;
   overflow-x: hidden;
@@ -19,8 +33,13 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Comfortaa', cursive;
-  font-weight: 400;
+  font-family: 'Battley Rus', cursive;
+  font-weight: 500;
+  font-size: 1.06em;
+}
+
+input, select, textarea, button {
+  font-family: 'Zhizn', sans-serif;
 }
 
 @keyframes fadeInUp {
@@ -221,7 +240,7 @@ h1, h2, h3, h4 {
   border: none;
   border-radius: 50px;
   color: #2c2c2c;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Zhizn', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   cursor: pointer;
@@ -241,7 +260,7 @@ h1, h2, h3, h4 {
   border: none;
   border-radius: 50px;
   color: #ffffff;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Zhizn', sans-serif;
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -260,7 +279,7 @@ h1, h2, h3, h4 {
   border: 2px solid #e8b860;
   border-radius: 50px;
   color: #e8b860;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Zhizn', sans-serif;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -280,7 +299,7 @@ h1, h2, h3, h4 {
   background: #e8b860;
   color: #2c2c2c;
   border-radius: 30px;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Zhizn', sans-serif;
   font-size: 1rem;
 }
 
@@ -290,7 +309,7 @@ h1, h2, h3, h4 {
   background: #b8505f;
   color: #ffffff;
   border-radius: 30px;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Zhizn', sans-serif;
   font-size: 1rem;
 }
 

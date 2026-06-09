@@ -61,7 +61,7 @@ export default function Survey() {
               fontSize: 'clamp(2rem, 6vw, 3rem)',
               color: '#ffffff',
               marginBottom: '15px',
-              fontFamily: "'Comfortaa', cursive",
+              fontFamily: "'Zhizn', sans-serif",
               fontWeight: 400,
             }}>
               Спасибо за ответ!
@@ -70,7 +70,7 @@ export default function Survey() {
               fontSize: '1.1rem',
               color: '#ffffff',
               lineHeight: 1.7,
-              fontFamily: "'Nunito Sans', sans-serif",
+              fontFamily: "'Zhizn', sans-serif",
               fontWeight: 400,
             }}>
               Мы получили вашу анкету и очень рады, что вы с нами!
@@ -89,7 +89,7 @@ export default function Survey() {
             fontSize: 'clamp(2.2rem, 6vw, 3.5rem)',
             color: '#ffffff',
             marginBottom: '15px',
-            fontFamily: "'Comfortaa', cursive",
+            fontFamily: "'Zhizn', sans-serif",
             fontWeight: 400,
             animation: 'fadeInUp 0.8s ease-out forwards',
             textAlign: 'center',
@@ -106,7 +106,7 @@ export default function Survey() {
             maxWidth: '600px',
             margin: '0 auto 16px',
             textAlign: 'center',
-            fontFamily: "'Nunito Sans', sans-serif",
+            fontFamily: "'Zhizn', sans-serif",
             fontWeight: 400,
           }}>
             Пожалуйста, заполните короткую анкету, чтобы мы могли лучше подготовиться к мероприятию
@@ -128,7 +128,7 @@ export default function Survey() {
             <p style={{
               fontSize: '1rem',
               color: '#ffffff',
-              fontFamily: "'Nunito Sans', sans-serif",
+              fontFamily: "'Zhizn', sans-serif",
               fontWeight: 700,
               margin: 0,
             }}>
@@ -151,7 +151,7 @@ export default function Survey() {
                   color: '#2c2c2c',
                   display: 'block',
                   marginBottom: '8px',
-                  fontFamily: "'Nunito Sans', sans-serif",
+                  fontFamily: "'Zhizn', sans-serif",
                   fontWeight: 400,
                 }}>
                   Имя и Фамилия *
@@ -170,7 +170,7 @@ export default function Survey() {
                     color: '#2c2c2c',
                     transition: 'border-color 0.3s ease',
                     outline: 'none',
-                    fontFamily: "'Nunito Sans', sans-serif",
+                    fontFamily: "'Zhizn', sans-serif",
                     fontWeight: 400,
                   }}
                   onFocus={(e) => e.target.style.borderColor = '#e8b860'}
@@ -185,7 +185,7 @@ export default function Survey() {
                   color: '#2c2c2c',
                   display: 'block',
                   marginBottom: '8px',
-                  fontFamily: "'Nunito Sans', sans-serif",
+                  fontFamily: "'Zhizn', sans-serif",
                   fontWeight: 400,
                 }}>
                   Сможете ли вы присутствовать? *
@@ -208,7 +208,7 @@ export default function Survey() {
                       transition: 'all 0.3s ease',
                       fontSize: '0.95rem',
                       color: '#2c2c2c',
-                      fontFamily: "'Nunito Sans', sans-serif",
+                      fontFamily: "'Zhizn', sans-serif",
                       fontWeight: 400,
                     }}>
                       <input
@@ -231,7 +231,7 @@ export default function Survey() {
                   color: '#2c2c2c',
                   display: 'block',
                   marginBottom: '8px',
-                  fontFamily: "'Nunito Sans', sans-serif",
+                  fontFamily: "'Zhizn', sans-serif",
                   fontWeight: 400,
                 }}>
                   Какие алкогольные напитки предпочитаете?
@@ -254,7 +254,7 @@ export default function Survey() {
                       transition: 'all 0.3s ease',
                       fontSize: '0.95rem',
                       color: '#2c2c2c',
-                      fontFamily: "'Nunito Sans', sans-serif",
+                      fontFamily: "'Zhizn', sans-serif",
                       fontWeight: 400,
                     }}>
                       <input
@@ -276,7 +276,7 @@ export default function Survey() {
                   color: '#2c2c2c',
                   display: 'block',
                   marginBottom: '8px',
-                  fontFamily: "'Nunito Sans', sans-serif",
+                  fontFamily: "'Zhizn', sans-serif",
                   fontWeight: 400,
                 }}>
                   Есть ли у вас на что-то аллергия?
@@ -295,7 +295,7 @@ export default function Survey() {
                     transition: 'border-color 0.3s ease',
                     outline: 'none',
                     resize: 'vertical',
-                    fontFamily: "'Nunito Sans', sans-serif",
+                    fontFamily: "'Zhizn', sans-serif",
                     fontWeight: 400,
                   }}
                   onFocus={(e) => e.target.style.borderColor = '#e8b860'}
@@ -309,7 +309,7 @@ export default function Survey() {
                   color: '#b8505f',
                   fontSize: '0.9rem',
                   marginBottom: '15px',
-                  fontFamily: "'Nunito Sans', sans-serif",
+                  fontFamily: "'Zhizn', sans-serif",
                   textAlign: 'center',
                 }}>
                   {error}

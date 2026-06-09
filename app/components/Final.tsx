@@ -18,7 +18,7 @@ export default function Final() {
             color: '#e8b860',
             marginBottom: '25px',
             lineHeight: 1.3,
-            fontFamily: "'Comfortaa', cursive",
+            fontFamily: "'Zhizn', sans-serif",
             fontWeight: 400,
           }}>
             Мы вас ждём!
@@ -32,7 +32,7 @@ export default function Final() {
             lineHeight: 1.9,
             maxWidth: '700px',
             margin: '0 auto 40px',
-            fontFamily: "'Nunito Sans', sans-serif",
+            fontFamily: "'Zhizn', sans-serif",
             fontWeight: 400,
           }}>
             Мы так сильно ждём нашу встречу с вами! Этот день станет для нас особенным,
@@ -45,7 +45,7 @@ export default function Final() {
             fontSize: 'clamp(1.6rem, 4vw, 2.4rem)',
             color: '#e8b860',
             marginTop: '20px',
-            fontFamily: "'Comfortaa', cursive",
+            fontFamily: "'Zhizn', sans-serif",
             fontWeight: 400,
           }}>
             С любовью, Артём и Вита

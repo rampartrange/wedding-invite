@@ -42,7 +42,7 @@ export default function Navigation() {
       backdropFilter: 'blur(8px)',
       borderBottom: '3px solid #b8505f',
     }}>
-      <div style={{ fontFamily: "'Comfortaa', cursive", color: '#b8505f', fontSize: '1rem', fontWeight: 400, letterSpacing: '0.03em' }}>
+      <div style={{ fontFamily: "'Zhizn', sans-serif", color: '#b8505f', fontSize: '1rem', fontWeight: 400, letterSpacing: '0.03em' }}>
         Артём &amp; Вита
       </div>
       <ul style={{ display: 'flex', gap: 'clamp(12px,2vw,28px)', listStyle: 'none', flexWrap: 'wrap' }}>
@@ -52,7 +52,7 @@ export default function Navigation() {
               onClick={() => scrollTo(item.id)}
               style={{
                 background: 'none', border: 'none', cursor: 'pointer',
-                fontFamily: "'Nunito Sans', sans-serif", fontSize: 'clamp(0.75rem,1.5vw,0.9rem)',
+                fontFamily: "'Zhizn', sans-serif", fontSize: 'clamp(0.75rem,1.5vw,0.9rem)',
                 fontWeight: activeSection === item.id ? 700 : 400,
                 color: activeSection === item.id ? '#b8505f' : '#2c2c2c',
                 borderBottom: activeSection === item.id ? '2px solid #b8505f' : '2px solid transparent',

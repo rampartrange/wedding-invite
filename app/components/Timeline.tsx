@@ -11,7 +11,7 @@ export default function Timeline() {
   return (
     <section id="timeline" style={{ background: 'rgba(255,255,255,0.8)', padding: 'clamp(60px,8vw,100px) 0 clamp(60px,8vw,100px)', overflow: 'hidden' }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 clamp(20px,5vw,60px)' }}>
-        <h2 style={{ fontSize: 'clamp(2.2rem,6vw,3.5rem)', color: '#9ea84b', marginBottom: '15px', fontFamily: "'Comfortaa', cursive", fontWeight: 400, textAlign: 'center', animation: 'fadeInUp 0.8s ease-out forwards' }}>
+        <h2 style={{ fontSize: 'clamp(2.2rem,6vw,3.5rem)', color: '#9ea84b', marginBottom: '15px', fontFamily: "'Zhizn', sans-serif", fontWeight: 400, textAlign: 'center', animation: 'fadeInUp 0.8s ease-out forwards' }}>
           Программа дня
         </h2>
         <div className="doodle-line-olive" style={{ marginBottom: '48px' }} />
@@ -32,13 +32,13 @@ export default function Timeline() {
             onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
           >
             <span style={{ fontSize: '28px', display: 'block', marginBottom: '12px' }}>{item.icon}</span>
-            <div style={{ fontSize: 'clamp(2rem,4vw,3rem)', color: item.timeColor, display: 'block', marginBottom: '10px', lineHeight: 1, fontFamily: "'Comfortaa', cursive", fontWeight: 400 }}>
+            <div style={{ fontSize: 'clamp(2rem,4vw,3rem)', color: item.timeColor, display: 'block', marginBottom: '10px', lineHeight: 1, fontFamily: "'Zhizn', sans-serif", fontWeight: 400 }}>
               {item.time}
             </div>
-            <h3 style={{ fontSize: '1.1rem', color: '#2c2c2c', marginBottom: '6px', fontFamily: "'Comfortaa', cursive", fontWeight: 400 }}>
+            <h3 style={{ fontSize: '1.1rem', color: '#2c2c2c', marginBottom: '6px', fontFamily: "'Zhizn', sans-serif", fontWeight: 400 }}>
               {item.title}
             </h3>
-            <p style={{ fontSize: '0.85rem', color: '#666', lineHeight: 1.55, fontFamily: "'Nunito Sans', sans-serif", fontWeight: 400 }}>
+            <p style={{ fontSize: '0.85rem', color: '#666', lineHeight: 1.55, fontFamily: "'Zhizn', sans-serif", fontWeight: 400 }}>
               {item.desc}
             </p>
           </div>

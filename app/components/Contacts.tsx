@@ -9,7 +9,7 @@ export default function Contacts() {
             fontSize: 'clamp(2.2rem, 6vw, 3.5rem)',
             color: '#ffffff',
             marginBottom: '15px',
-            fontFamily: "'Comfortaa', cursive",
+            fontFamily: "'Zhizn', sans-serif",
             fontWeight: 400,
             animation: 'fadeInUp 0.8s ease-out forwards',
             textAlign: 'center',
@@ -25,7 +25,7 @@ export default function Contacts() {
             lineHeight: 1.7,
             maxWidth: '600px',
             margin: '0 auto 40px',
-            fontFamily: "'Nunito Sans', sans-serif",
+            fontFamily: "'Zhizn', sans-serif",
             fontWeight: 400,
             textAlign: 'center',
           }}>
@@ -58,7 +58,7 @@ export default function Contacts() {
                 fontSize: '1.4rem',
                 color: '#2c2c2c',
                 marginBottom: '10px',
-                fontFamily: "'Comfortaa', cursive",
+                fontFamily: "'Zhizn', sans-serif",
                 fontWeight: 400,
               }}>
                 Telegram
@@ -67,7 +67,7 @@ export default function Contacts() {
                 fontSize: '0.9rem',
                 color: '#2c2c2c',
                 marginBottom: '15px',
-                fontFamily: "'Nunito Sans', sans-serif",
+                fontFamily: "'Zhizn', sans-serif",
                 fontWeight: 400,
               }}>
                 Общий чат для гостей
@@ -80,12 +80,14 @@ export default function Contacts() {
                 fontSize: '0.9rem',
               }}>
                 <a
-                  href="#"
+                  href="https://t.me/+oUcytHt1wYk5OTYy"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
                     fontSize: '0.9rem',
                     color: '#2c2c2c',
                     textDecoration: 'none',
-                    fontFamily: "'Nunito Sans', sans-serif",
+                    fontFamily: "'Zhizn', sans-serif",
                     fontWeight: 400,
                   }}
                 >
@@ -112,7 +114,7 @@ export default function Contacts() {
                 fontSize: '1.4rem',
                 color: '#2c2c2c',
                 marginBottom: '10px',
-                fontFamily: "'Comfortaa', cursive",
+                fontFamily: "'Zhizn', sans-serif",
                 fontWeight: 400,
               }}>
                 MAX
@@ -121,7 +123,7 @@ export default function Contacts() {
                 fontSize: '0.9rem',
                 color: '#2c2c2c',
                 marginBottom: '15px',
-                fontFamily: "'Nunito Sans', sans-serif",
+                fontFamily: "'Zhizn', sans-serif",
                 fontWeight: 400,
               }}>
                 Альтернативный чат
@@ -134,12 +136,14 @@ export default function Contacts() {
                 fontSize: '0.9rem',
               }}>
                 <a
-                  href="#"
+                  href="https://max.ru/join/1I7UhDzsufWDQk33EPWmBFeO_20D-dy1jx1hcXsaadk"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
                     fontSize: '0.9rem',
                     color: '#2c2c2c',
                     textDecoration: 'none',
-                    fontFamily: "'Nunito Sans', sans-serif",
+                    fontFamily: "'Zhizn', sans-serif",
                     fontWeight: 400,
                   }}
                 >
@@ -164,7 +168,7 @@ export default function Contacts() {
               fontSize: '1.5rem',
               color: '#2c2c2c',
               marginBottom: '10px',
-              fontFamily: "'Comfortaa', cursive",
+              fontFamily: "'Zhizn', sans-serif",
               fontWeight: 400,
             }}>
               Эля — наш организатор
@@ -174,7 +178,7 @@ export default function Contacts() {
               color: '#2c2c2c',
               lineHeight: 1.6,
               marginBottom: '15px',
-              fontFamily: "'Nunito Sans', sans-serif",
+              fontFamily: "'Zhizn', sans-serif",
               fontWeight: 400,
             }}>
               По любым дополнительным вопросам вы всегда можете обратиться к нашей wonderful организатору Эле.
@@ -188,12 +192,14 @@ export default function Contacts() {
               fontSize: '1rem',
             }}>
               <a
-                href="#"
+                href="https://t.me/emtemnikova"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   fontSize: '1rem',
                   color: '#ffffff',
                   textDecoration: 'none',
-                  fontFamily: "'Nunito Sans', sans-serif",
+                  fontFamily: "'Zhizn', sans-serif",
                   fontWeight: 400,
                 }}
               >

@@ -25,28 +25,28 @@ export default function WeddingDetails() {
       <div style={{ maxWidth: '1100px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
         <div className="two-col-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }}>
 
-          {/* Left — text */}
-          <div style={{ animation: 'fadeInUp 0.8s ease-out forwards' }}>
-            <h2 style={{ fontSize: 'clamp(2.2rem, 6vw, 3.5rem)', color: '#c4405e', marginBottom: '15px', fontFamily: "'Comfortaa', cursive", fontWeight: 400 }}>
+          {/* Left — text widget */}
+          <div style={{ animation: 'fadeInUp 0.8s ease-out forwards', backgroundColor: 'rgba(255,255,255,0.93)', borderRadius: '28px', boxShadow: '0 8px 40px rgba(43,82,163,0.15)', padding: '40px' }}>
+            <h2 style={{ fontSize: 'clamp(2.3rem, 6vw, 3.7rem)', color: '#c4405e', marginBottom: '15px', fontFamily: "'Zhizn', sans-serif", fontWeight: 500 }}>
               Дорогие друзья!
             </h2>
             <div className="doodle-line" style={{ background: '#c4405e', margin: '0 0 28px' }} />
 
-            <p style={{ fontSize: 'clamp(1rem, 2vw, 1.15rem)', color: '#2c2c2c', lineHeight: 1.8, marginBottom: '28px', fontFamily: "'Nunito Sans', sans-serif", fontWeight: 400 }}>
+            <p style={{ fontSize: 'clamp(1rem, 2vw, 1.15rem)', color: '#2c2c2c', lineHeight: 1.8, marginBottom: '28px', fontFamily: "'Zhizn', sans-serif", fontWeight: 400 }}>
               С огромной радостью приглашаем вас разделить с нами самый важный и счастливый день в нашей жизни —
               день нашей свадьбы! Мечтаем, чтобы этот праздник прошёл в окружении самых близких и любимых людей.
             </p>
 
-            <div style={{ backgroundColor: 'rgba(255,255,255,0.92)', borderRadius: '24px', boxShadow: '0 8px 30px rgba(43,82,163,0.15)', padding: '32px', marginBottom: '24px' }}>
+            <div style={{ backgroundColor: '#f5f0e8', borderRadius: '16px', padding: '24px', marginBottom: '24px' }}>
               <div style={{ display: 'grid', gap: '20px' }}>
                 <div>
-                  <h3 style={{ fontSize: '1.4rem', marginBottom: '6px', color: '#2b52a3', fontFamily: "'Comfortaa', cursive", fontWeight: 400 }}>Когда</h3>
-                  <p style={{ fontSize: '1.1rem', color: '#2c2c2c', fontFamily: "'Nunito Sans', sans-serif", fontWeight: 400 }}>24 августа 2026 года</p>
+                  <h3 style={{ fontSize: '1.5rem', marginBottom: '6px', color: '#2b52a3', fontFamily: "'Zhizn', sans-serif", fontWeight: 500 }}>Когда</h3>
+                  <p style={{ fontSize: '1.1rem', color: '#2c2c2c', fontFamily: "'Zhizn', sans-serif", fontWeight: 400 }}>24 августа 2026 года</p>
                 </div>
                 <div>
-                  <h3 style={{ fontSize: '1.4rem', marginBottom: '8px', color: '#2b52a3', fontFamily: "'Comfortaa', cursive", fontWeight: 400 }}>Где</h3>
-                  <div style={{ background: '#f5f0e8', padding: '12px 16px', borderRadius: '12px' }}>
-                    <a href={MAPS_WEB_URL} onClick={openMaps} rel="noopener noreferrer" style={{ fontSize: '0.95rem', color: '#2c2c2c', textDecoration: 'none', borderBottom: '1px dashed #2b52a3', fontFamily: "'Nunito Sans', sans-serif", fontWeight: 400 }}>
+                  <h3 style={{ fontSize: '1.5rem', marginBottom: '8px', color: '#2b52a3', fontFamily: "'Zhizn', sans-serif", fontWeight: 500 }}>Где</h3>
+                  <div style={{ background: '#ffffff', padding: '12px 16px', borderRadius: '12px' }}>
+                    <a href={MAPS_WEB_URL} onClick={openMaps} rel="noopener noreferrer" style={{ fontSize: '0.95rem', color: '#2c2c2c', textDecoration: 'none', borderBottom: '1px dashed #2b52a3', fontFamily: "'Zhizn', sans-serif", fontWeight: 400 }}>
                       Краснодарский край, г. Геленджик, ул. Стартовая, д. 1, корп. 2
                     </a>
                   </div>
@@ -54,7 +54,7 @@ export default function WeddingDetails() {
               </div>
             </div>
 
-            <p style={{ fontSize: 'clamp(0.95rem, 2vw, 1.1rem)', color: '#2c2c2c', lineHeight: 1.8, fontStyle: 'italic', fontFamily: "'Nunito Sans', sans-serif", fontWeight: 400 }}>
+            <p style={{ fontSize: 'clamp(0.95rem, 2vw, 1.1rem)', color: '#2c2c2c', lineHeight: 1.8, fontFamily: "'Zhizn', sans-serif", fontWeight: 400 }}>
               Мы решили отпраздновать этот день ярко и незабываемо — в природной локации на свежем воздухе,
               с живописным видом на море и горы.
             </p>
@@ -72,10 +72,10 @@ export default function WeddingDetails() {
               {/* Rotating dashed ring */}
               <div style={{ position: 'absolute', inset: '-15px', border: '3px dashed rgba(184,80,95,0.35)', borderRadius: '50%', animationName: 'rotateRing', animationDuration: '20s', animationTimingFunction: 'linear', animationIterationCount: 'infinite' }} />
               <div style={{ fontSize: '44px', marginBottom: '12px' }}>🌊</div>
-              <div style={{ fontFamily: "'Comfortaa', cursive", fontWeight: 400, fontSize: '1.2rem', lineHeight: 1.4, color: '#2b52a3' }}>
+              <div style={{ fontFamily: "'Zhizn', sans-serif", fontWeight: 400, fontSize: '1.2rem', lineHeight: 1.4, color: '#2b52a3' }}>
                 Море, горы<br />и самые близкие
               </div>
-              <div style={{ fontFamily: "'Nunito Sans', sans-serif", fontSize: '0.9rem', marginTop: '10px', color: '#b8505f', fontWeight: 600 }}>
+              <div style={{ fontFamily: "'Zhizn', sans-serif", fontSize: '0.9rem', marginTop: '10px', color: '#b8505f', fontWeight: 600 }}>
                 Геленджик · 2026
               </div>
             </div>
